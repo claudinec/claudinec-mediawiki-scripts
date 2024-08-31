@@ -1,19 +1,32 @@
 = SkinSwitcher =
 <!-- [[w:en:User:ClaudineChionh/Scripts/SkinSwitcher]] -->
-
-{{infobox user script
- | name = SkinSwitcher
- | desc = Allows for easy switching between MediaWiki's default skins
- | author = [[User:Eizen|Eizen]] <br/> [[User:ClaudineChionh]]
- | updated = {{start date and age|2021|11|06}}
- | status = Beta
- | version = 0.2.0
- | source = [[User:ClaudineChionh/Scripts/SkinSwitcher.js]]
- | skins = Vector<br /> Timeless<br/> MonoBook<br /> ApiOutput
- | browsers = Developed in [[Google Chrome]]
- | logo =
- | screenshot =
- | screenshot-caption =
+{{infobox Wikipedia user script
+ |styled             = 
+ |bodystyle          = 
+ |install-target     = 
+ |name               = SkinSwitcher
+ |logo               = 
+ |logosize           = 
+ |logoupright        = 
+ |logoalt            = 
+ |logo-caption       = 
+ |screenshot         = 
+ |screenshotsize     = 
+ |screenshotupright  = 
+ |screenshotalt      = 
+ |screenshot-caption = 
+ |desc               = Allows for easy switching between MediaWiki's default skins
+ |author             = [[User:Eizen|Eizen]] <br/> [[User:ClaudineChionh|]]
+ |maintainer         = [[User:ClaudineChionh|]]
+ |status             = beta
+ |released           = 
+ |version            = 0.2.0
+ |updated            = {{start date and age|2021|11|06}}
+ |browsers           = Developed in [[Google Chrome]]
+ |skins              = Vector<br /> Timeless<br/> MonoBook<br /> ApiOutput
+ |source             = [[User:ClaudineChionh/Scripts/SkinSwitcher.js]]
+ |github             = 
+ |categorize         = <!-- or " |cat = " -->
 }}
 
 <div style="text-align: center;">''This is the documentation page for the [[User:ClaudineChionh/Scripts/SkinSwitcher.js]] user script, which was forked from [[User:Eizen/SkinSwitcher.js]].''</div>
