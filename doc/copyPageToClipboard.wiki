@@ -1,0 +1,19 @@
+= copyPageToClipboard =
+<!-- [[w:en:User:ClaudineChionh/Scripts/copyPageToClipboard]] -->
+
+{{infobox user script
+| name= copyPageToClipboard
+| desc= Copy the page content to the system clipboard
+| author= [[User:ClaudineChionh]]
+| status= alpha
+| released= {{Start date and age|2021|11|06|df=y}}
+| version= 0.1.2
+| updated= {{Start date and age|2021|11|06|df=y}}
+| source= [[User:ClaudineChionh/Scripts/copyPageToClipboard.js]]
+}}
+
+On an edit form, this script adds a link in the '''Tools''' menu to copy the content of the edit form to the system clipboard. Useful for, say, copying text to a [[text editor]] for thorough editing.
+
+This script uses the Clipboard API – see [https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API browser compatibility].
+
+<!-- vim: set syntax=mediawiki textwidth=0 linebreak spell spelllang=en_au,en_gb: -->

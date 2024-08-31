@@ -1,0 +1,10 @@
+= README =
+
+<!-- [[w:en:User:ClaudineChionh/Scripts]] -->
+
+Not much to see here yet...
+
+* [[User:ClaudineChionh/Scripts/SkinSwitcher]] – fork of [[User:Eizen/SkinSwitcher]] to choose between default desktop skins as of 2021
+* [[User:ClaudineChionh/Scripts/copyPageToClipboard]]
+
+<!-- vim: set syntax=mediawiki textwidth=0 linebreak spell spelllang=en_au,en_gb: -->
