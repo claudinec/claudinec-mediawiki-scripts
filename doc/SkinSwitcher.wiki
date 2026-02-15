@@ -1,47 +1,23 @@
-= SkinSwitcher =
-<!-- [[w:en:User:ClaudineChionh/Scripts/SkinSwitcher]] -->
+= w:en:User:ClaudineChionh/Scripts/SkinSwitcher =
+{{ombox
+ |small=yes
+ |type=content
+ |text=This is the documentation page for the [[User:ClaudineChionh/Scripts/SkinSwitcher.js]] user script, which was forked from [[User:Eizen/SkinSwitcher.js]]. '''[[User:Macaw*/Vector 2022 Skin Switcher.js]]''' is a fork of this script that also includes Vector{{nbsp}}2022.}}
 
-{{infobox user script
+{{infobox Wikipedia user script
  | name = SkinSwitcher
  | desc = Allows for easy switching between MediaWiki's default skins
- | author = [[User:Eizen|Eizen]] <br/> [[User:ClaudineChionh]]
+ | author = [[User:Eizen|Eizen]] <br/> [[User:ClaudineChionh|ClaudineChionh]]
  | updated = {{start date and age|2021|11|06}}
- | status = Beta
+ | status = Obsolete
  | version = 0.2.0
  | source = [[User:ClaudineChionh/Scripts/SkinSwitcher.js]]
- | skins = Vector<br /> Timeless<br/> MonoBook<br /> ApiOutput
+ | skins = Vector 2010<br /> Timeless<br/> MonoBook<br /> ApiOutput
  | browsers = Developed in [[Google Chrome]]
- | logo =
- | screenshot =
- | screenshot-caption =
 }}
 
-<div style="text-align: center;">''This is the documentation page for the [[User:ClaudineChionh/Scripts/SkinSwitcher.js]] user script, which was forked from [[User:Eizen/SkinSwitcher.js]].''</div>
-
-'''SkinSwitcher''' is a [[JavaScript]] [[Wikipedia:User scripts|user script]] that allows users to view a given page in MediaWiki's default skins. At present, these are Vector, Timeless, MonoBook, and ApiOutput.
+'''SkinSwitcher''' is a [[JavaScript]] [[Wikipedia:User scripts|user script]] that allows users to view a given page in MediaWiki's default skins. {{As of|2021|11|06}}, these were Vector (2010), Timeless, MonoBook, and ApiOutput.
 
 An options menu/toolbox/toolbar is provided in each skin to make skin switching convenient and easy. For Vector, Timeless, and MonoBook, a toolbox is provided below "Tools" on the left-hand side of the screen, and for ApiOutput, an experimental toolbar is provided across the top of the {{mono|body}} of the page.
 
-Please note that this script is still in the beta testing phase. While it will work in most instances, it is in a state of refinement and may still play host to bugs and unexpected behaviors. Likewise, off-Wikipedia usage may be limited in some cases, as not all Wikimedia wikis share the same base toolbox/toolbar elements and CSS ids/classes.
-
-== Installation ==
-
-You can install this script on this Wikipedia by adding the following to your personal [[Special:MyPage/common.js|common.js]] file:
-
-{{tlxs|lusc|User:ClaudineChionh/Scripts/SkinSwitcher.js}}
-
-which expands to:
-
-<syntaxhighlight lang="JavaScript">
-mw.loader.load("/w/index.php?title=User:ClaudineChionh/Scripts/SkinSwitcher.js&action=raw&ctype=text/javascript");
-</syntaxhighlight>
-
-Alternatively, you can install the script globally on all Wikimedia wikis by adding the following to your [[m:Special:MyPage/global.js|global.js]] file:
-
-<syntaxhighlight lang="JavaScript">
-mw.loader.load("//en.wikipedia.org/w/index.php?title=User:ClaudineChionh/Scripts/SkinSwitcher.js&action=raw&ctype=text/javascript");
-</syntaxhighlight>
-
-[[Category:Wikipedia scripts|SkinSwitcher]]
-
-<!-- vim: set syntax=mediawiki textwidth=0 linebreak spell spelllang=en_au,en_gb: -->
+This script has not been updated since 2021. '''[[User:Macaw*/Vector 2022 Skin Switcher.js]]''' is a fork of this script that also includes Vector{{nbsp}}2022, the default skin {{as of|2025|lc=yes}}.
