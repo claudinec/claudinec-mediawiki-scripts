@@ -1,0 +1,52 @@
+= [[w:en:User:ClaudineChionh/Scripts/highlightPiped]] =
+{{ombox
+ |text=This is the documentation page for the [[User:ClaudineChionh/Scripts/highlightPiped.js]] user script, which was forked from [[Special:Permalink/1172697276|revision 1172697276]] of [[User:Jeeputer/highlightPiped.js]]. This version of the script can be used in the User and Draft namespaces as well as Main.}}
+
+{{infobox Wikipedia user script
+ |name               = Pipe Highlighter
+ |desc               = Highlights piped links in body of pages.
+ |author             = {{ubl|[[User:Jeeputer|Jeeputer]]|[[User:ClaudineChionh|ClaudineChionh]]}}
+ |status             = beta
+ |version            = 0.2.0
+ |updated            = {{Start date and age|2025|05|25|df=y}}
+ |skins              = {{ubl|Vector|Vector 2022}}
+}}
+
+'''Pipe Highlighter''' is a [[Wikipedia:User scripts|user script]] that highlights [[Wikipedia:Piped link|piped links]]. It is completely compatible with BrandonXLF's [[User:BrandonXLF/GreenRedirects|GreenRedirects]] and [[MediaWiki:Gadget-DisambiguationLinks.css|Gadget-DisambiguationLinks.css]] which highlight links to redirects and disambiguation pages, respectively.
+
+== Installation ==
+You can install this script on this Wikipedia by adding the following to your personal [[Special:MyPage/common.js|common.js]] file:
+
+{{tlxs|lusc|User:ClaudineChionh/Scripts/highlightPiped.js}}
+
+which expands to:
+
+<syntaxhighlight lang="JavaScript">
+mw.loader.load("/w/index.php?title=User:ClaudineChionh/Scripts/highlightPiped.js&action=raw&ctype=text/javascript"); // Backlink: [[User:ClaudineChionh/Scripts/highlightPiped.js]]
+</syntaxhighlight>
+
+Alternatively, you can install the script globally on all Wikimedia wikis by adding the following to your [[m:Special:MyPage/global.js|global.js]] file:
+
+<syntaxhighlight lang="JavaScript">
+mw.loader.load("//en.wikipedia.org/w/index.php?title=User:ClaudineChionh/Scripts/highlightPiped.js&action=raw&ctype=text/javascript");
+</syntaxhighlight>
+
+You may need to [[Wikipedia:PURGE|purge your browser's cache]] after saving the page.
+
+== Usage ==
+After installation, you can test the script [[Special:Permalink/1171968680|here]].
+
+If you have [[User:BrandonXLF/GreenRedirects|GreenRedirects]] installed, or have {{Myprefs|Gadgets|check=Display links to disambiguation pages in orange}} enabled, piped links to redirect and/or disambiguation pages will appear like "'''{{color|#B3446C|{{!}}}}'''{{color|#060|Link}}" and "'''{{color|#B3446C|{{!}}}}'''{{color|#f17600|Link}}" respectively. otherwise, all types of piped links appear like {{Color|#B3446C|Link}}.
+
+=== Custom color ===
+The default color for highlighted links is [[Cerise_(color)#Irresistible|Irresistible]] ({{Color box|#B3446C}} [[Hex triplet]]: <code>#B3446C</code>).
+
+You can change the default color by placing the following code '''before''' the code you added to [[Special:MyPage/common.js|your common.js]] to install the script:
+<syntaxhighlight lang="javascript">
+window.pipeHighlighterCustomColor = '#XXXXXX';
+</syntaxhighlight>
+
+Note that you have to replace <code>#XXXXXX</code> with the Hex triplet of your preferred color (like <code>#B3446C</code> for the default color). You can choose a color from [[Lists of colors]].
+
+== Limitations ==
+Links like <code><nowiki>[[Ship]]s</nowiki></code> are also considered as piped links as there's no way for the script to distinguish them from piped links.

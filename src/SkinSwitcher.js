@@ -1,5 +1,4 @@
 /**
- * [[w:en:User:ClaudineChionh/Scripts/SkinSwitcher.js]]
  * SkinSwitcher.js
  * @file Allows for easy switching between MediaWiki's default skins
  * @author Eizen [[User:Eizen]]
@@ -156,4 +155,3 @@ mw.loader.using("mediawiki.util", function () {
         SkinSwitcher.init();
     });
 });
-
