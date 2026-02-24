@@ -1,7 +1,11 @@
+// SPDX-FileCopyrightText: 2017 User:Eizen
+// SPDX-FileCopyrightText: 2021 User:ClaudineChionh
+//
+// SPDX-License-Identifier: Apache-2.0
 /**
  * SkinSwitcher.js
  * @file Allows for easy switching between MediaWiki's default skins
- * @author Eizen [[User:Eizen]]
+ * @author Eizen [[User:Eizen]] - version at [[Special:Permalink/998366927]]
  * @author ClaudineChionh [[User:ClaudineChionh]]
  * @version 0.2.0
  * @license Apache-2.0

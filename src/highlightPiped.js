@@ -1,6 +1,10 @@
+// SPDX-FileCopyrightText: 2023 User:Jeeputer
+// SPDX-FileCopyrightText: 2025 User:ClaudineChionh
+//
+// SPDX-License-Identifier: CC-BY-SA-4.0
 /**
  * [[User:ClaudineChionh/Scripts/highlightPiped.js]]
- * Fork of [[User:Jeeputer/highlightPiped.js]]
+ * Fork of [[User:Jeeputer/highlightPiped.js]] – version at [[Special:Permalink/1172697276]]
  * Can be used in Main, User, and Draft namespaces.
  * @author [[User:Jeeputer]]
  * @author [[User:ClaudineChionh]]

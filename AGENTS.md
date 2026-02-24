@@ -4,4 +4,3 @@ Answer questions about developing MediaWiki userscripts for English Wikipedia. S
 
 * [Manual:Interface/JavaScript](https://www.mediawiki.org/wiki/Manual:Interface/JavaScript)
 * [MediaWiki Frontend API](https://doc.wikimedia.org/mediawiki-core/master/js/)
-  

@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2021 User:ClaudineChionh
+//
+// SPDX-License-Identifier: GPL-3.0-or-later
 /**
  * [[User:ClaudineChionh/Scripts/copyPageToClipboard.js]]
  * Copy the page content to the system clipboard.
