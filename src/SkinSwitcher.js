@@ -2,6 +2,7 @@
  * SkinSwitcher.js
  * @file Allows for easy switching between MediaWiki's default skins.
  * Fork of [[User:Eizen/SkinSwitcher.js]] – version at [[Special:Permalink/998366927]].
+ * @todo Add vector-2022 and minerva
  * @author Eizen [[User:Eizen]]
  * @author ClaudineChionh [[User:ClaudineChionh]]
  * @version 0.2.0
@@ -23,8 +24,10 @@ mw.loader.using("mediawiki.util", function () {
             viewIn: "View this page in $1 skin"
         },
         skins: {
-            "vector": "Vector",
+            "vector-2022": "Vector (2022)",
+            "vector": "Vector (2010)",
             "timeless": "Timeless",
+            "minerva": "Minerva (Neue)",
             "monobook": "MonoBook",
             "apioutput": "ApiOutput"
         },

@@ -9,7 +9,7 @@
  | desc = Allows for easy switching between MediaWiki's default skins
  | author = [[User:Eizen|Eizen]] <br/> [[User:ClaudineChionh|ClaudineChionh]]
  | updated = {{start date and age|2021|11|06}}
- | status = Obsolete
+ | status = <!-- Macaw deleted their fork 2025-11-24 -->
  | version = 0.2.0
  | source = [[User:ClaudineChionh/Scripts/SkinSwitcher.js]]
  | skins = Vector 2010<br /> Timeless<br/> MonoBook<br /> ApiOutput
