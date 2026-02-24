@@ -5,7 +5,7 @@
  * @author Eizen [[User:Eizen]]
  * @author ClaudineChionh [[User:ClaudineChionh]]
  * @version 0.2.0
- * @license Apache-2.0
+ * @license Apache-2.0 OR CC-BY-SA-4.0
  * @external "jQuery"
  * @external "mediawiki.util"
  */
