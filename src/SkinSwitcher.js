@@ -1,6 +1,7 @@
 /**
  * SkinSwitcher.js
- * @file Allows for easy switching between MediaWiki's default skins
+ * @file Allows for easy switching between MediaWiki's default skins.
+ * Fork of [[User:Eizen/SkinSwitcher.js]] – version at [[Special:Permalink/998366927]].
  * @author Eizen [[User:Eizen]]
  * @author ClaudineChionh [[User:ClaudineChionh]]
  * @version 0.2.0
