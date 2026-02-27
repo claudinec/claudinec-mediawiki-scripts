@@ -1,15 +1,10 @@
 // SPDX-FileCopyrightText: 2017 User:Eizen
 // SPDX-FileCopyrightText: 2021 User:ClaudineChionh
-//
 // SPDX-License-Identifier: Apache-2.0 OR CC-BY-SA-4.0
 /**
- * SkinSwitcher.js
- * @file Allows for easy switching between MediaWiki's default skins.
+ * SkinSwitcher.js: Allows for easy switching between MediaWiki's default skins.
  * Fork of [[User:Eizen/SkinSwitcher.js]] – version at [[Special:Permalink/998366927]].
- * @todo Add vector-2022 and minerva
- * @author Eizen [[User:Eizen]]
- * @author ClaudineChionh [[User:ClaudineChionh]]
- * @version 0.2.0
+ * @version 0.3.0-dev
  * @external "jQuery"
  * @external "mediawiki.util"
  */
@@ -121,11 +116,13 @@ mw.loader.using("mediawiki.util", function () {
 
             switch (this.currentSkin) {
                 case "vector":
+                case "vector-2022":
                 case "timeless":
                 case "monobook":
                     this.cloneMenu("#p-tb");
                     $appendLocation = jQuery("#skinSwitcher ul");
                     break;
+                case "minerva":
                 case "apioutput":
                     this.experimentalPlacement();
                     $appendLocation = jQuery("#skinSwitcher");
