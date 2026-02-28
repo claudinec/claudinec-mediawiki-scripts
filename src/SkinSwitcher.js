@@ -16,6 +16,7 @@ mw.loader.using("mediawiki.util", function () {
      * @class SkinSwitcher
      * @classdesc The central SkinSwitcher class
      * @author User:Eizen
+     * @author User:ClaudineChionh
      */
     var SkinSwitcher = {
         lang: {
@@ -36,20 +37,18 @@ mw.loader.using("mediawiki.util", function () {
          * @param {string} $itemText
          * @returns {html}
          * @author User:Eizen
+         * @author User:ClaudineChionh
          */
         constructElement: function ($selectedSkin, $itemText) {
-            var $href = window.location.href;
-            var $param = (window.location.search)
-                ? "&"
-                : "?";
+            var $url = new URL(window.location.href);
+            $url.searchParams.set("useskin", $selectedSkin);
 
             return mw.html.element("li", {
                 "id": "skinSwitcher-li-" + $selectedSkin,
                 "class": "skinSwitcher-li"
             }, new mw.html.Raw(
                 mw.html.element("a", {
-                    "href": $href.replace(/#.*/, "") +
-                        $param + jQuery.param({ useskin: $selectedSkin }),
+                    "href": $url.toString(),
                     "title": this.lang.viewIn.replace("$1", $itemText),
                     "id": "skinSwitcher-a-" + $selectedSkin,
                     "class": "skinSwitcher-a"
