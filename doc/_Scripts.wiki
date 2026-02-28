@@ -2,6 +2,6 @@
 
 * {{Userscript |doc=User:ClaudineChionh/Scripts/copyPageToClipboard |noref=yes}} – Copy the page content to the system clipboard
 * {{Userscript |doc=User:ClaudineChionh/Scripts/highlightPiped |noref=yes}} – Fork of [[User:Jeeputer/highlightPiped]] that can be used in User and Drafts namespaces as well as Main
-* {{Userscript |doc=User:ClaudineChionh/Scripts/SkinSwitcher |noref=yes}} – {{caution sign|Obsolete}} Fork of [[User:Eizen/SkinSwitcher]] to choose between default desktop skins {{as of|2021|lc=yes}}. [[User:Macaw*/Vector 2022 Skin Switcher.js]] is a fork of this script that also includes Vector 2022.
+* {{Userscript |doc=User:ClaudineChionh/Scripts/SkinSwitcher |noref=yes}} – Fork of [[User:Eizen/SkinSwitcher]] to choose between default desktop skins {{as of|2024|lc=yes}}.
 
 <!-- vim: set syntax=mediawiki textwidth=0 linebreak spell spelllang=en_au,en_gb: -->
