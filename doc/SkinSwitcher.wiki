@@ -2,22 +2,19 @@
 {{ombox
  |small=yes
  |type=content
- |text=This is the documentation page for the [[User:ClaudineChionh/Scripts/SkinSwitcher.js]] user script, which was forked from [[User:Eizen/SkinSwitcher.js]]. '''[[User:Macaw*/Vector 2022 Skin Switcher.js]]''' is a fork of this script that also includes Vector{{nbsp}}2022.}}
+ |text=This is the documentation page for the [[User:ClaudineChionh/Scripts/SkinSwitcher.js]] user script, which was forked from [[User:Eizen/SkinSwitcher.js]].}}
 
 {{infobox Wikipedia user script
- | name = SkinSwitcher
- | desc = Allows for easy switching between MediaWiki's default skins
- | author = [[User:Eizen|Eizen]] <br/> [[User:ClaudineChionh|ClaudineChionh]]
- | updated = {{start date and age|2021|11|06}}
- | status = <!-- Macaw deleted their fork 2025-11-24 -->
- | version = 0.2.0
- | source = [[User:ClaudineChionh/Scripts/SkinSwitcher.js]]
- | skins = Vector 2010<br /> Timeless<br/> MonoBook<br /> ApiOutput
- | browsers = Developed in [[Google Chrome]]
+ |name      = SkinSwitcher
+ |desc      = Allows for easy switching between MediaWiki's default skins
+ |author    = [[User:Eizen|Eizen]] <br/> [[User:ClaudineChionh|ClaudineChionh]]
+ |updated   = {{Start date and age|2026|02|28}}
+ |status    = Beta
+ |version   = 0.3.0
+ |source    = [[User:ClaudineChionh/Scripts/SkinSwitcher.js]]
+ |skins     = {{Vector 2022|Vector 2010|Timeless|Minerva|MonoBook|ApiOutput}}
 }}
 
 '''SkinSwitcher''' is a [[JavaScript]] [[Wikipedia:User scripts|user script]] that allows users to view a given page in MediaWiki's default skins. {{As of|2021|11|06}}, these were Vector (2010), Timeless, MonoBook, and ApiOutput.
 
-An options menu/toolbox/toolbar is provided in each skin to make skin switching convenient and easy. For Vector, Timeless, and MonoBook, a toolbox is provided below "Tools" on the left-hand side of the screen, and for ApiOutput, an experimental toolbar is provided across the top of the {{mono|body}} of the page.
-
-This script has not been updated since 2021. '''[[User:Macaw*/Vector 2022 Skin Switcher.js]]''' is a fork of this script that also includes Vector{{nbsp}}2022, the default skin {{as of|2025|lc=yes}}.
+An options menu/toolbox/toolbar is provided in each skin to make skin switching convenient and easy. For Vector (2022 and 2010), Timeless, and MonoBook, a toolbox is provided below "Tools" on the left-hand side of the screen, and for Minerva and ApiOutput, an experimental toolbar is provided across the top of the {{mono|body}} of the page.

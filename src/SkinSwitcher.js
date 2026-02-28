@@ -4,7 +4,7 @@
 /**
  * SkinSwitcher.js: Allows for easy switching between MediaWiki's default skins.
  * Fork of [[User:Eizen/SkinSwitcher.js]] – version at [[Special:Permalink/998366927]].
- * @version 0.3.0-dev
+ * @version 0.3.0
  * @external "jQuery"
  * @external "mediawiki.util"
  */
@@ -31,6 +31,7 @@ mw.loader.using("mediawiki.util", function () {
             "monobook": "MonoBook",
             "apioutput": "ApiOutput"
         },
+
         /**
          * @method constructElement
          * @param {string} $selectedSkin
@@ -55,6 +56,7 @@ mw.loader.using("mediawiki.util", function () {
                 }, $itemText)
             ));
         },
+
         /**
          * @method assembleElements
          * @returns {string[] } $elementsArray
@@ -71,6 +73,7 @@ mw.loader.using("mediawiki.util", function () {
 
             return $elementsArray;
         },
+
         /**
          * @method cloneMenu
          * @param {string} $template
@@ -86,6 +89,7 @@ mw.loader.using("mediawiki.util", function () {
                 .html("<span>" + this.lang.script + "</span>");
             jQuery("#skinSwitcher ul").empty();
         },
+
         /**
          * @method experimentalPlacement
          * @returns {void}
@@ -110,6 +114,7 @@ mw.loader.using("mediawiki.util", function () {
                 id: "skinSwitcher"
             }).prependTo(".mw-body");
         },
+
         /**
          * @method determinePlacement
          * @param {string[] } $assembledElements
@@ -139,6 +144,7 @@ mw.loader.using("mediawiki.util", function () {
                 jQuery($element).appendTo($appendLocation);
             });
         },
+
         /**
          * @method init
          * @returns {void}
