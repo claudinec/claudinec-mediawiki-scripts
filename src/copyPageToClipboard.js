@@ -1,15 +1,11 @@
 // SPDX-FileCopyrightText: 2021 User:ClaudineChionh
-//
 // SPDX-License-Identifier: GPL-3.0-or-later
 /**
  * [[User:ClaudineChionh/Scripts/copyPageToClipboard.js]]
  * Copy the page content to the system clipboard.
  * This script uses the Clipboard API – for browser compatibility see
  * https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API
- *
- * @author Claudine Chionh [[User:ClaudineChionh]]
  * @version 0.2.0
- * @license GPL-3.0-or-later
  * @external jQuery
  */
 

@@ -1,6 +1,5 @@
 // SPDX-FileCopyrightText: 2023 User:Jeeputer
 // SPDX-FileCopyrightText: 2025 User:ClaudineChionh
-//
 // SPDX-License-Identifier: CC-BY-SA-4.0
 /**
  * [[User:ClaudineChionh/Scripts/highlightPiped.js]]
