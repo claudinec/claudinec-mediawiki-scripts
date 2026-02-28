@@ -12,9 +12,29 @@
  |status    = Beta
  |version   = 0.3.0
  |source    = [[User:ClaudineChionh/Scripts/SkinSwitcher.js]]
- |skins     = {{Vector 2022|Vector 2010|Timeless|Minerva|MonoBook|ApiOutput}}
+ |skins     = {{ubl|Vector 2022|Vector 2010|Timeless|Minerva|MonoBook|ApiOutput}}
 }}
 
-'''SkinSwitcher''' is a [[JavaScript]] [[Wikipedia:User scripts|user script]] that allows users to view a given page in MediaWiki's default skins. {{As of|2021|11|06}}, these were Vector (2010), Timeless, MonoBook, and ApiOutput.
+'''SkinSwitcher''' is a [[JavaScript]] [[Wikipedia:User scripts|user script]] that allows users to view a given page in a different [[WP:skin|]]. {{As of|2024|01}}, the skins available on English Wikipedia are Vector (2022 and 2010), Timeless, Minerva, MonoBook, and ApiOutput.
 
 An options menu/toolbox/toolbar is provided in each skin to make skin switching convenient and easy. For Vector (2022 and 2010), Timeless, and MonoBook, a toolbox is provided below "Tools" on the left-hand side of the screen, and for Minerva and ApiOutput, an experimental toolbar is provided across the top of the {{mono|body}} of the page.
+
+== Installation ==
+
+You can install this script on this Wikipedia by adding the following to your personal [[Special:MyPage/common.js|common.js]] file:
+
+{{tlxs|lusc|User:ClaudineChionh/Scripts/SkinSwitcher.js}}
+
+which expands to:
+
+<syntaxhighlight lang="JavaScript">
+mw.loader.load("/w/index.php?title=User:ClaudineChionh/Scripts/SkinSwitcher.js&action=raw&ctype=text/javascript");
+</syntaxhighlight>
+
+Alternatively, you can install the script globally on all Wikimedia wikis by adding the following to your [[m:Special:MyPage/global.js|global.js]] file:
+
+<syntaxhighlight lang="JavaScript">
+mw.loader.load("//en.wikipedia.org/w/index.php?title=User:ClaudineChionh/Scripts/SkinSwitcher.js&action=raw&ctype=text/javascript");
+</syntaxhighlight>
+
+[[Category:Wikipedia scripts|SkinSwitcher]]
