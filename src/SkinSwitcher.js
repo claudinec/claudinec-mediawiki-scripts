@@ -15,6 +15,7 @@ mw.loader.using("mediawiki.util", function () {
     /**
      * @class SkinSwitcher
      * @classdesc The central SkinSwitcher class
+     * @author User:Eizen
      */
     var SkinSwitcher = {
         lang: {
@@ -34,6 +35,7 @@ mw.loader.using("mediawiki.util", function () {
          * @param {string} $selectedSkin
          * @param {string} $itemText
          * @returns {html}
+         * @author User:Eizen
          */
         constructElement: function ($selectedSkin, $itemText) {
             var $href = window.location.href;
@@ -57,6 +59,7 @@ mw.loader.using("mediawiki.util", function () {
         /**
          * @method assembleElements
          * @returns {string[] } $elementsArray
+         * @author User:Eizen
          */
         assembleElements: function () {
             var $elementsArray = [];
@@ -73,6 +76,7 @@ mw.loader.using("mediawiki.util", function () {
          * @method cloneMenu
          * @param {string} $template
          * @returns {void}
+         * @author User:Eizen
          */
         cloneMenu: function ($template) {
             jQuery($template)
@@ -86,6 +90,7 @@ mw.loader.using("mediawiki.util", function () {
         /**
          * @method experimentalPlacement
          * @returns {void}
+         * @author User:Eizen
          */
         experimentalPlacement: function () {
             // Experimental CSS to center links horizontally in header
@@ -110,6 +115,8 @@ mw.loader.using("mediawiki.util", function () {
          * @method determinePlacement
          * @param {string[] } $assembledElements
          * @returns {void}
+         * @author User:Eizen
+         * @author User:ClaudineChionh
          */
         determinePlacement: function ($assembledElements) {
             var $appendLocation;
@@ -136,6 +143,7 @@ mw.loader.using("mediawiki.util", function () {
         /**
          * @method init
          * @returns {void}
+         * @author User:Eizen
          */
         init: function () {
             if (
