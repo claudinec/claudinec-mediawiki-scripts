@@ -38,3 +38,17 @@ mw.loader.load("//en.wikipedia.org/w/index.php?title=User:ClaudineChionh/Scripts
 </syntaxhighlight>
 
 [[Category:Wikipedia scripts|SkinSwitcher]]
+
+<!-- [[WP:USL]] listing: §Appearance and behavior > Site-wide
+{{user script table row
+|name=SkinSwitcher
+|code=User:Eizen/SkinSwitcher.js
+|doc=User:Eizen/SkinSwitcher
+|desc=Allows users to view pages in the skins available as of 2017.
+}}
+{{user script table row
+|indent=1
+|code=User:ClaudineChionh/Scripts/SkinSwitcher.js
+|desc=Updated version compatible with skins available as of 2024 (Vector 2022, Vector 2010, Timeless, Minerva, MonoBook, and ApiOutput).
+}}
+-->

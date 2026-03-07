@@ -50,3 +50,19 @@ Note that you have to replace <code>#XXXXXX</code> with the Hex triplet of your 
 
 == Limitations ==
 Links like <code><nowiki>[[Ship]]s</nowiki></code> are also considered as piped links as there's no way for the script to distinguish them from piped links.
+
+<!-- [[WP:USL]] listing: §Appearance and behavior > Links
+{{user script table row
+|code=User:Jeeputer/highlightPiped.js
+|name=Pipe Highlighter
+|doc=User:Jeeputer/highlightPiped
+|desc=Colors [[WP:Piped link|piped links]] with the color [[Cerise (color)#Irresistible|Irresistible]] or a custom color set by the user. It is compatible with BrandonXLF's Green Redirects and the gadget for highlighting disambig links.
+}}
+{{user script table row
+|indent=1
+|code=User:ClaudineChionh/Scripts/highlightPiped.js
+|name=highlightPiped
+|doc=User:ClaudineChionh/Scripts/highlightPiped
+|desc=Fork of Pipe Highlighter that can be used in User and Drafts namespaces as well as Main.
+}}
+-->
