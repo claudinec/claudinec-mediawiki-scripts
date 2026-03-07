@@ -1,4 +1,6 @@
 # MediaWiki userscripts
+<!-- SPDX-FileCopyrightText: 2026 User:ClaudineChionh -->
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
 
 Answer questions about developing MediaWiki userscripts for English Wikipedia. Starting points for documentation:
 
