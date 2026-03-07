@@ -1,4 +1,22 @@
 = w:en:User:ClaudineChionh/Scripts/SkinSwitcher =
+<!-- vim: set syntax=mediawiki textwidth=0 linebreak spell spelllang=en_au,en_gb: -->
+<!-- SPDX-FileCopyrightText: 2021 User:ClaudineChionh -->
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 OR GFDL-1.3-no-invariants-or-later -->
+
+<!-- [[WP:USL]] listing: §Appearance and behavior > Site-wide
+{{user script table row
+|name=SkinSwitcher
+|code=User:Eizen/SkinSwitcher.js
+|doc=User:Eizen/SkinSwitcher
+|desc=Allows users to view pages in the skins available as of 2017.
+}}
+{{user script table row
+|indent=1
+|code=User:ClaudineChionh/Scripts/SkinSwitcher.js
+|desc=Updated version compatible with skins available as of 2024 (Vector 2022, Vector 2010, Timeless, Minerva, MonoBook, and ApiOutput).
+}}
+-->
+
 {{ombox
  |small=yes
  |type=content
@@ -39,16 +57,3 @@ mw.loader.load("//en.wikipedia.org/w/index.php?title=User:ClaudineChionh/Scripts
 
 [[Category:Wikipedia scripts|SkinSwitcher]]
 
-<!-- [[WP:USL]] listing: §Appearance and behavior > Site-wide
-{{user script table row
-|name=SkinSwitcher
-|code=User:Eizen/SkinSwitcher.js
-|doc=User:Eizen/SkinSwitcher
-|desc=Allows users to view pages in the skins available as of 2017.
-}}
-{{user script table row
-|indent=1
-|code=User:ClaudineChionh/Scripts/SkinSwitcher.js
-|desc=Updated version compatible with skins available as of 2024 (Vector 2022, Vector 2010, Timeless, Minerva, MonoBook, and ApiOutput).
-}}
--->
