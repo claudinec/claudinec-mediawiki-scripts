@@ -4,13 +4,13 @@
  |desc               = Copy the page content to the system clipboard
  |author             = [[User:ClaudineChionh|ClaudineChionh]]
  |status             = alpha
- |source             =  [[User:ClaudineChionh/Scripts/copyPageToClipboard.js]]
+ |source             = [[User:ClaudineChionh/Scripts/copyPageToClipboard.js]]
  |released           = {{Start date and age|2021|11|06|df=y}}
- |version            = 0.2.0
- |updated            = {{Start date and age|2025|05|26|df=y}}
+ |version            = 0.3.0
+ |updated            = {{Start date and age|2026|03|08|df=y}}
 }}
 
-'''copyPageToClipboard''' adds a link in the '''Tools''' menu to copy the content of the edit form to the system clipboard. Useful for, say, copying text to a [[WP:TEXTES|text editor]] for thorough editing.
+'''copyPageToClipboard''' adds a link in the '''Tools''' menu to copy the content of the current page or edit form to the system clipboard. Useful for, say, copying text to a [[WP:TEXTES|text editor]] for thorough editing.
 
 This script uses the Clipboard API – see [https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API browser compatibility].
 
@@ -31,3 +31,10 @@ Alternatively, you can install the script globally on all Wikimedia wikis by add
 <syntaxhighlight lang="JavaScript">
 mw.loader.load("//en.wikipedia.org/w/index.php?title=User:ClaudineChionh/Scripts/copyPageToClipboard.js&action=raw&ctype=text/javascript"); // Backlink: [[w:en:User:ClaudineChionh/Scripts/copyPageToClipboard.js]]
 </syntaxhighlight>
+
+<!-- [[WP:USL]] listing: §Editing > Edit form
+{{user script table row
+ |doc=User:ClaudineChionh/Scripts/copyPageToClipboard
+ |desc=Copy the content of the current page or edit form to the system clipboard.
+}}
+-->
