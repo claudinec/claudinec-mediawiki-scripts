@@ -1,7 +1,9 @@
 = w:en:User:ClaudineChionh/Scripts =
+<!-- vim: set syntax=mediawiki textwidth=0 linebreak spell spelllang=en_au,en_gb: -->
+<!-- SPDX-FileCopyrightText: 2021 User:ClaudineChionh -->
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 OR GFDL-1.3-no-invariants-or-later -->
 
 * {{Userscript |doc=User:ClaudineChionh/Scripts/copyPageToClipboard |noref=yes}} – Copy the content of the current page or edit form to the system clipboard
 * {{Userscript |doc=User:ClaudineChionh/Scripts/highlightPiped |noref=yes}} – Fork of [[User:Jeeputer/highlightPiped]] that can be used in User and Drafts namespaces as well as Main
 * {{Userscript |doc=User:ClaudineChionh/Scripts/SkinSwitcher |noref=yes}} – Fork of [[User:Eizen/SkinSwitcher]] to choose between default desktop skins as of 2024
 
-<!-- vim: set syntax=mediawiki textwidth=0 linebreak spell spelllang=en_au,en_gb: -->
