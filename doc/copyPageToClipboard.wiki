@@ -2,6 +2,14 @@
 <!-- vim: set syntax=mediawiki textwidth=0 linebreak spell spelllang=en_au,en_gb: -->
 <!-- SPDX-FileCopyrightText: 2021 User:ClaudineChionh -->
 <!-- SPDX-License-Identifier: CC-BY-SA-4.0 OR GFDL-1.3-no-invariants-or-later -->
+
+<!-- [[WP:USL]] listing: §Editing > Edit form
+{{user script table row
+ |doc=User:ClaudineChionh/Scripts/copyPageToClipboard
+ |desc=Copy the content of the current page or edit form to the system clipboard.
+}}
+-->
+
 {{infobox Wikipedia user script
  |name               = copyPageToClipboard
  |desc               = Copy the page content to the system clipboard
@@ -34,10 +42,3 @@ Alternatively, you can install the script globally on all Wikimedia wikis by add
 <syntaxhighlight lang="JavaScript">
 mw.loader.load("//en.wikipedia.org/w/index.php?title=User:ClaudineChionh/Scripts/copyPageToClipboard.js&action=raw&ctype=text/javascript"); // Backlink: [[w:en:User:ClaudineChionh/Scripts/copyPageToClipboard.js]]
 </syntaxhighlight>
-
-<!-- [[WP:USL]] listing: §Editing > Edit form
-{{user script table row
- |doc=User:ClaudineChionh/Scripts/copyPageToClipboard
- |desc=Copy the content of the current page or edit form to the system clipboard.
-}}
--->
