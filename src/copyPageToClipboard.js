@@ -52,6 +52,7 @@ $(document).ready(function() {
     );
 
     $(copyLink).click(function(event) {
+        event.preventDefault();
         // If we have the edit form open and it has any content, copy that.
         // Otherwise we need to get the wikitext via API.
         var textbox = $('#wpTextbox1').val();
