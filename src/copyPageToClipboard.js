@@ -11,7 +11,7 @@
 $(document).ready(function() {
     /**
      * Copy content to system clipboard.
-     * @params {string}
+     * @param {string}
      */
     function copyToClipboard(content) {
         const copySuccessMsg = 'Copied page content to system clipboard';
