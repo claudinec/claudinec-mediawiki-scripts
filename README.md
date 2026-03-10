@@ -1,8 +1,8 @@
-# MediaWiki scripts
+# MediaWiki user scripts
 <!-- SPDX-FileCopyrightText: 2024 User:ClaudineChionh -->
 <!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
 
-[MediaWiki user scripts](https://www.mediawiki.org/wiki/Manual:Interface/JavaScript) developed primarily for use on English Wikipedia and other Wikimedia projects.
+[MediaWiki user scripts](https://en.wikipedia.org/wiki/Wikipedia:User_scripts) developed primarily for use on English Wikipedia and other Wikimedia projects.
 
 List of scripts ([on-wiki version](https://en.wikipedia.org/wiki/User:ClaudineChionh/Scripts)):
 
