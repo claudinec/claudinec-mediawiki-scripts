@@ -1,44 +1,45 @@
-= w:en:User:ClaudineChionh/Scripts/copyPageToClipboard =
+= w:en:User:ClaudineChionh/Scripts/copyPageContent =
 <!-- vim: set syntax=mediawiki textwidth=0 linebreak spell spelllang=en_au,en_gb: -->
 <!-- SPDX-FileCopyrightText: 2021 User:ClaudineChionh -->
 <!-- SPDX-License-Identifier: CC-BY-SA-4.0 OR GFDL-1.3-no-invariants-or-later -->
-
 <!-- [[WP:USL]] listing: §Editing > Edit form
 {{user script table row
- |doc=User:ClaudineChionh/Scripts/copyPageToClipboard
+ |doc=User:ClaudineChionh/Scripts/copyPageContent
  |desc=Copy the content of the current page or edit form to the system clipboard.
 }}
 -->
 
-{{infobox Wikipedia user script
- |name               = copyPageToClipboard
+{{Infobox Wikipedia user script
+ |name               = copyPageContent
  |desc               = Copy the page content to the system clipboard
  |author             = [[User:ClaudineChionh|ClaudineChionh]]
  |status             = alpha
- |source             = [[User:ClaudineChionh/Scripts/copyPageToClipboard.js]]
+ |source             = [[User:ClaudineChionh/Scripts/copyPageContent.js]]
  |released           = {{Start date and age|2021|11|06|df=y}}
- |version            = 0.3.0
- |updated            = {{Start date and age|2026|03|08|df=y}}
+ |version            = 0.3.1
+ |updated            = {{Start date and age|2026|03|13|df=y}}
 }}
 
-'''copyPageToClipboard''' adds a link in the '''Tools''' menu to copy the content of the current page or edit form to the system clipboard. Useful for, say, copying text to a [[WP:TEXTES|text editor]] for thorough editing.
+'''copyPageContent''' adds a link in the '''Tools''' menu to copy the raw content of the current page or edit form to the system clipboard. You might find this useful for copying text to a [[WP:TEXTES|text editor]] for thorough editing.
 
 This script uses the Clipboard API – see [https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API browser compatibility].
+
+'''Warning for Visual Editor users:''' This script is not yet compatible with the VE edit form. (I'll work on this issue when I get over my aversion to VE.)
 
 == Installation ==
 
 You can install this script on this Wikipedia by adding the following to your personal [[Special:MyPage/common.js|common.js]] file:
 
-{{tlxs|lusc|User:ClaudineChionh/Scripts/copyPageToClipboard.js}}
+{{tlxs|lusc|User:ClaudineChionh/Scripts/copyPageContent.js}}
 
 which expands to:
 
 <syntaxhighlight lang="JavaScript">
-mw.loader.load("/w/index.php?title=User:ClaudineChionh/Scripts/copyPageToClipboard.js&action=raw&ctype=text/javascript"); // Backlink: [[User:ClaudineChionh/Scripts/copyPageToClipboard.js]]
+mw.loader.load("/w/index.php?title=User:ClaudineChionh/Scripts/copyPageContent.js&action=raw&ctype=text/javascript"); // Backlink: [[User:ClaudineChionh/Scripts/copyPageContent.js]]
 </syntaxhighlight>
 
 Alternatively, you can install the script globally on all Wikimedia wikis by adding the following to your [[meta:Special:MyPage/global.js|global.js]] file:
 
 <syntaxhighlight lang="JavaScript">
-mw.loader.load("//en.wikipedia.org/w/index.php?title=User:ClaudineChionh/Scripts/copyPageToClipboard.js&action=raw&ctype=text/javascript"); // Backlink: [[w:en:User:ClaudineChionh/Scripts/copyPageToClipboard.js]]
+mw.loader.load("//en.wikipedia.org/w/index.php?title=User:ClaudineChionh/Scripts/copyPageContent.js&action=raw&ctype=text/javascript"); // Backlink: [[w:en:User:ClaudineChionh/Scripts/copyPageContent.js]]
 </syntaxhighlight>
