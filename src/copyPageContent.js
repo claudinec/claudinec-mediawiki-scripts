@@ -3,7 +3,7 @@
 /**
  * Copy the page content to the system clipboard using the Clipboard API.
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API}
- * @todo Test with Visual Editor
+ * @todo GH-6 Test with Visual Editor
  * @version 0.3.1
  * @external jQuery
  */
