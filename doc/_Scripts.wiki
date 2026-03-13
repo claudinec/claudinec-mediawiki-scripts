@@ -6,4 +6,3 @@
 * {{Userscript |doc=User:ClaudineChionh/Scripts/copyPageContent |noref=yes}} – Copy the content of the current page or edit form to the system clipboard
 * {{Userscript |doc=User:ClaudineChionh/Scripts/highlightPiped |noref=yes}} – Fork of [[User:Jeeputer/highlightPiped]] that can be used in User and Drafts namespaces as well as Main
 * {{Userscript |doc=User:ClaudineChionh/Scripts/SkinSwitcher |noref=yes}} – Fork of [[User:Eizen/SkinSwitcher]] to choose between default desktop skins as of 2024
-

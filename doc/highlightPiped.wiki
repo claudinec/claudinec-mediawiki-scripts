@@ -70,3 +70,5 @@ Note that you have to replace <code>#XXXXXX</code> with the Hex triplet of your 
 
 == Limitations ==
 Links like <code><nowiki>[[Ship]]s</nowiki></code> are also considered as piped links as there's no way for the script to distinguish them from piped links.
+
+[[Category:Wikipedia scripts|highlightPiped]]
