@@ -19,14 +19,13 @@
 
 {{ombox
  |small=yes
- |type=content
- |text=This is the documentation page for the [[User:ClaudineChionh/Scripts/SkinSwitcher.js]] user script, which was forked from [[User:Eizen/SkinSwitcher.js]].}}
+ |text=This is the documentation page for the [[User:ClaudineChionh/Scripts/SkinSwitcher.js]] user script, which was forked from at [[Special:Permalink/998366927|revision 998366927]] of [[User:Eizen/SkinSwitcher.js]].}}
 
 {{infobox Wikipedia user script
  |name      = SkinSwitcher
  |desc      = Allows for easy switching between MediaWiki's default skins
  |author    = [[User:Eizen|Eizen]] <br/> [[User:ClaudineChionh|ClaudineChionh]]
- |updated   = {{Start date and age|2026|02|28}}
+ |updated   = {{Start date and age|2026|02|28|df=y}}
  |status    = Beta
  |version   = 0.3.0
  |source    = [[User:ClaudineChionh/Scripts/SkinSwitcher.js]]
