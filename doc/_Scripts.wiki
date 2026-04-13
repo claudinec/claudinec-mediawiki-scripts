@@ -3,6 +3,11 @@
 <!-- SPDX-FileCopyrightText: 2021 User:ClaudineChionh -->
 <!-- SPDX-License-Identifier: CC-BY-SA-4.0 OR GFDL-1.3-no-invariants-or-later -->
 
-* {{Userscript |doc=User:ClaudineChionh/Scripts/copyPageContent |noref=yes}} – Copy the content of the current page or edit form to the system clipboard
-* {{Userscript |doc=User:ClaudineChionh/Scripts/highlightPiped |noref=yes}} – Fork of [[User:Jeeputer/highlightPiped]] that can be used in User and Drafts namespaces as well as Main
-* {{Userscript |doc=User:ClaudineChionh/Scripts/SkinSwitcher |noref=yes}} – Fork of [[User:Eizen/SkinSwitcher]] to choose between default desktop skins as of 2024
+== Original ==
+
+* {{Userscript |doc=User:ClaudineChionh/Scripts/copyPageContent |noref=yes}} ([https://github.com/claudinec/claudinec-mediawiki-scripts/blob/main/src/copyPageContent.js GitHub]) – Copy the content of the current page or edit form to the system clipboard
+
+== Forks ==
+
+* {{Userscript |doc=User:ClaudineChionh/Scripts/highlightPiped |noref=yes}} ([https://github.com/claudinec/claudinec-mediawiki-scripts/blob/main/src/highlightPiped.js GitHub]) – Fork of [[User:Jeeputer/highlightPiped]] that can be used in User and Drafts namespaces as well as Main
+* {{Userscript |doc=User:ClaudineChionh/Scripts/SkinSwitcher |noref=yes}} ([https://github.com/claudinec/claudinec-mediawiki-scripts/blob/main/src/SkinSwitcher.js GitHub]) – Fork of [[User:Eizen/SkinSwitcher]] to choose between default desktop skins {{as of|2024|lc=yes}}
