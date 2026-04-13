@@ -54,6 +54,7 @@ $(document).ready(function() {
     /**
      * If we have the edit form open and it has any content, copy that.
      * Otherwise we need to get the wikitext via API.
+     * @todo GH-9 Don't display on pages without body content/special pages
      * @todo GH-6 Enable in Visual Editor
      */
     $(copyLink).click(function(event) {
