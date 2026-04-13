@@ -3,7 +3,6 @@
 /**
  * Copy the page content to the system clipboard using the Clipboard API.
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API}
- * @todo GH-6 Test with Visual Editor
  * @version 0.3.1
  * @external jQuery
  */
@@ -26,6 +25,7 @@ $(document).ready(function() {
 
     /**
      * Get current page wikitext via API as it's not available in the HTML DOM.
+     * @todo GH-10 Retrieve old revision when calling from a permalink or diff
      * @returns {string}
      */
     function getPageWikitext() {
@@ -51,10 +51,13 @@ $(document).ready(function() {
         'Copy page content to clipboard'
     );
 
+    /**
+     * If we have the edit form open and it has any content, copy that.
+     * Otherwise we need to get the wikitext via API.
+     * @todo GH-6 Enable in Visual Editor
+     */
     $(copyLink).click(function(event) {
         event.preventDefault();
-        // If we have the edit form open and it has any content, copy that.
-        // Otherwise we need to get the wikitext via API.
         var textbox = $('#wpTextbox1').val();
         if (textbox) {
             copyToClipboard(textbox);
