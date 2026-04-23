@@ -5,9 +5,9 @@
 
 == Original ==
 
-* {{Userscript |doc=User:ClaudineChionh/Scripts/copyPageContent |noref=yes}} ([https://github.com/claudinec/claudinec-mediawiki-scripts/blob/main/src/copyPageContent.js GitHub]) – Copy the content of the current page or edit form to the system clipboard
+* {{Userscript |doc=User:ClaudineChionh/Scripts/copyPageContent |noref=yes}} – Copy the content of the current page or edit form to the system clipboard ({{GitHub|https://github.com/claudinec/claudinec-mediawiki-scripts/blob/main/src/copyPageContent.js}})
 
 == Forks ==
 
-* {{Userscript |doc=User:ClaudineChionh/Scripts/highlightPiped |noref=yes}} ([https://github.com/claudinec/claudinec-mediawiki-scripts/blob/main/src/highlightPiped.js GitHub]) – Fork of [[User:Jeeputer/highlightPiped]] that can be used in User and Drafts namespaces as well as Main
-* {{Userscript |doc=User:ClaudineChionh/Scripts/SkinSwitcher |noref=yes}} ([https://github.com/claudinec/claudinec-mediawiki-scripts/blob/main/src/SkinSwitcher.js GitHub]) – Fork of [[User:Eizen/SkinSwitcher]] to choose between default desktop skins {{as of|2024|lc=yes}}
+* {{Userscript |doc=User:ClaudineChionh/Scripts/highlightPiped |noref=yes}} – Fork of [[User:Jeeputer/highlightPiped]] that can be used in User and Drafts namespaces as well as Main ({{GitHub|https://github.com/claudinec/claudinec-mediawiki-scripts/blob/main/src/highlightPiped.js}})
+* {{Userscript |doc=User:ClaudineChionh/Scripts/SkinSwitcher |noref=yes}} – Fork of [[User:Eizen/SkinSwitcher]] to choose between default desktop skins {{as of|2024|lc=yes}} ({{GitHub|https://github.com/claudinec/claudinec-mediawiki-scripts/blob/main/src/SkinSwitcher.js}})
