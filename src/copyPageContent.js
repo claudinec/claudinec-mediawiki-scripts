@@ -56,6 +56,9 @@ $(document).ready(function() {
      * Otherwise we need to get the wikitext via API.
      * @todo GH-9 Don't display on pages without body content/special pages
      * @todo GH-6 Enable in Visual Editor
+     * @see {@link https://www.mediawiki.org/wiki/Help:Extension:CodeMirror#Support_for_the_2017_wikitext_editor}
+     * @todo Check that this works with CodeMirror 6
+     * @see {@link https://www.mediawiki.org/wiki/Extension:CodeMirror#JavaScript}
      */
     $(copyLink).click(function(event) {
         event.preventDefault();
