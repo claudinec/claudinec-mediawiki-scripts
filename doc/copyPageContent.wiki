@@ -13,7 +13,7 @@
  |name               = copyPageContent
  |desc               = Copy the page content to the system clipboard
  |author             = [[User:ClaudineChionh|ClaudineChionh]]
- |status             = alpha
+ |status             = Beta
  |source             = [[User:ClaudineChionh/Scripts/copyPageContent.js]]
  |released           = {{Start date and age|2021|11|06|df=y}}
  |version            = 0.3.1
@@ -23,8 +23,6 @@
 '''copyPageContent''' adds a link in the '''Tools''' menu to copy the raw content of the current page or edit form to the system clipboard. You might find this useful for copying text to a [[WP:TEXTES|text editor]] for thorough editing.
 
 This script uses the Clipboard API – see [https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API browser compatibility].
-
-'''Warning for Visual Editor users:''' This script is not yet compatible with the VE edit form. (I'll work on this issue when I get over my aversion to VE.)
 
 == Installation ==
 
