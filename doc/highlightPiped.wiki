@@ -26,7 +26,7 @@
  |name               = Pipe Highlighter
  |desc               = Highlights piped links in body of pages.
  |author             = {{ubl|[[User:Jeeputer|Jeeputer]]|[[User:ClaudineChionh|ClaudineChionh]]}}
- |status             = beta
+ |status             = Beta
  |version            = 0.2.0
  |updated            = {{Start date and age|2025|05|25|df=y}}
  |skins              = {{ubl|Vector|Vector 2022}}
