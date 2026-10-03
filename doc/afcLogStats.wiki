@@ -1,0 +1,62 @@
+<!-- SPDX-FileCopyrightText: 2026 User:ClaudineChionh -->
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 OR GFDL-1.3-no-invariants-or-later -->
+{{infobox Wikipedia user script
+ |styled             =
+ |bodystyle          =
+ |install-target     =
+ |name               =
+ |logo               =
+ |logosize           =
+ |logoupright        =
+ |logoalt            =
+ |logo-caption       =
+ |screenshot         =
+ |screenshotsize     =
+ |screenshotupright  =
+ |screenshotalt      =
+ |screenshot-caption =
+ |desc               =
+ |author             = [[User:ClaudineChionh|]]
+ |maintainer         =
+ |status             =
+ |beta               = y
+ |source             = <!-- or " |mainsource = " or " |beta = " -->
+ |released           = {{Start date and age|yyyy|mm|dd|df=y}}
+ |version            = 0.1.0
+ |updated            = {{Start date and age|yyyy|mm|dd|df=y}}
+ |browsers           =
+ |skins              =
+ |github             =
+ |categorize         = <!-- or " |cat = " -->
+}}
+
+'''afcLogStats''' is a [[WP:US|user script]] that counts a user's [[WP:AFC|Articles for Creation]] reviews that have been logged by the [[Wikipedia:WikiProject Articles for creation/Helper script#Logging|AFCH script]], and calculates accept, decline, and reject rates.
+
+== Benefits ==
+
+Because this script simply parses the users's AfC log, it counts drafts that have been deleted, in contrast to the [https://apersonbot.toolforge.org/afchistory/ afchistory tool] which queries the Wikipedia API.
+
+== Limitations ==
+
+* This script only counts reviews made with the AfC Helper script with logging turned on.
+* It only activates on pages named <code>User:<username>/AfC log</code>, not on its subpages (which are recommended for prolific reviewers).
+
+== Installation ==
+
+You can install this script on this Wikipedia by adding the following to your personal [[Special:MyPage/common.js|common.js]] file:
+
+{{tlxs|lusc|User:ClaudineChionh/Scripts/afcLogStats.js}}
+
+which expands to:
+
+<syntaxhighlight lang="JavaScript">
+mw.loader.load("/w/index.php?title=User:ClaudineChionh/Scripts/afcLogStats.js&action=raw&ctype=text/javascript"); // Backlink: [[User:ClaudineChionh/Scripts/afcLogStats.js]]
+</syntaxhighlight>
+
+Alternatively, you can install the script globally on all Wikimedia wikis by adding the following to your [[m:Special:MyPage/global.js|global.js]] file:
+
+<syntaxhighlight lang="JavaScript">
+mw.loader.load("//en.wikipedia.org/w/index.php?title=User:ClaudineChionh/Scripts/afcLogStats.js&action=raw&ctype=text/javascript");
+</syntaxhighlight>
+
+You may need to [[Wikipedia:PURGE|purge your browser's cache]] after saving the page.
