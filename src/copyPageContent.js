@@ -25,7 +25,6 @@ $(document).ready(function() {
 
     /**
      * Get current page wikitext via API as it's not available in the HTML DOM.
-     * @todo GH-10 Retrieve old revision when calling from a permalink or diff
      * @returns {string}
      */
     function getPageWikitext() {
