@@ -3,11 +3,24 @@
 /**
  * Copy the page content to the system clipboard using the Clipboard API.
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API}
- * @version 0.3.1
+ * @version 0.4.0
  * @external jQuery
  */
 
 $(document).ready(function() {
+    // Special pages are generated and have no stored wikitext.
+    if (mw.config.get('wgNamespaceNumber') === -1) {
+        return;
+    }
+
+    // Add portlet link.
+    var copyLink = mw.util.addPortletLink(
+        'p-tb',
+        '#',
+        'Copy page content',
+        't-copypage',
+        'Copy page content to clipboard'
+    );
     /**
      * Copy content to system clipboard.
      * @param {string}
@@ -41,19 +54,9 @@ $(document).ready(function() {
         });
     }
 
-    // Add portlet link.
-    var copyLink = mw.util.addPortletLink(
-        'p-tb',
-        '#',
-        'Copy page content',
-        't-copypage',
-        'Copy page content to clipboard'
-    );
-
     /**
      * If we have the edit form open and it has any content, copy that.
      * Otherwise we need to get the wikitext via API.
-     * @todo GH-9 Don't display on pages without body content/special pages
      */
     $(copyLink).click(function(event) {
         event.preventDefault();
