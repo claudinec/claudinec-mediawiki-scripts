@@ -7,19 +7,42 @@
  * @external jQuery
  */
 
-$(document).ready(function () {
-    /**
-     * @todo Parse an AfC_log page
-     */
-    function parseAfcLog() {
+const AFCLOG_RE = /User:.+\/AfC_log/;
+// const DECLINE_RE = /^Declined (Draft|User):(.+) \(((?<reason1>\w+){ & (?<reason2>\w+)}?)\) by /;
+const DECLINE_RE = /^Declined (Draft|User):(.+) \(((\w+)( & (\w+))?)\) by /;
 
+$(document).ready(function () {
+    // Only activate on pages matching User:Username/AfC_log.
+    let pageName = mw.config.get("wgPageName");
+    if (!(pageName.match(AFCLOG_RE))) {
+        return;
     }
 
     /**
-     * @todo Add portlet link
+     * Parse an AfC_log page.
+     * An AfC log page (without archives) is divided into sections for each calendar month.
      */
+    function parseAfcLog() {
+        let monthCounts = new Object();
+        let allMonths = document.querySelectorAll(".mw-heading3");
+        for (const month of allMonths) {
+            var monthId = month.firstElementChild.id;
+            var logEntries = Array.from(month.nextElementSibling.children);
+            var acceptedReviews = logEntries.filter((review) => review.innerText.startsWith("Accepted"));
+            var declinedReviews = logEntries.filter((review) => review.innerText.startsWith("Declined"));
+            // TODO: count decline reasons
+            // if (declinedReviews.length > 0) {
+            // }
+            var rejectedReviews = logEntries.filter((review) => review.innerText.startsWith("Rejected"));
+            monthCounts[monthId] = {"accepted": acceptedReviews.length, "declined": declinedReviews.length, "rejected": rejectedReviews.length};
+        }
+        return monthCounts;
+    }
 
     /**
-     * @todo Only activate on pages matching User:Username/AfC_log
+     * @todo Display review counts for whole page and for each month.
      */
+
+    // @todo Add portlet link.
+
 });
