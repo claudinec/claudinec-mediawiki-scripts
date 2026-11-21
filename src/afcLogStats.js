@@ -22,31 +22,37 @@ $(document).ready(function () {
      * Get each month's review totals from an AfC log.
      * An AfC log page (without archives) is divided into sections for each calendar month.
      */
-    function parseAfcLog() {
+    function getMonthTotals() {
         let monthTotals = new Object();
         let allMonths = document.querySelectorAll(".mw-heading3");
+
+        // Parse page for each month's totals and display these under each month's heading.
         for (const month of allMonths) {
-            var monthId = month.firstElementChild.id;
+            var monthId = month.firstElementChild.id;  // id format: MMMM_yyyy
             var logEntries = Array.from(month.nextElementSibling.children);
             var acceptedReviews = logEntries.filter((review) => review.innerText.startsWith("Accepted"));
+            var acceptedTotal = acceptedReviews.length;
             var declinedReviews = logEntries.filter((review) => review.innerText.startsWith("Declined"));
-            // TODO: count decline reasons
-            // if (declinedReviews.length > 0) {
-            // }
+            var declinedTotal = declinedReviews.length;
+            // TODO: count decline reasons if (declinedReviews.length > 0)
             var rejectedReviews = logEntries.filter((review) => review.innerText.startsWith("Rejected"));
-            monthTotals[monthId] = {"accepted": acceptedReviews.length, "declined": declinedReviews.length, "rejected": rejectedReviews.length};
+            var rejectedTotal = rejectedReviews.length;
+
+            // Display each month's totals between the heading and the start of the list.
+            var monthDiv = document.createElement("div");
+            var monthText = document.createTextNode(`Accepted: ${acceptedTotal}, Declined: ${declinedTotal}, Rejected: ${rejectedTotal}.`);
+            var monthDisplay = monthDiv.appendChild(monthText);
+            month.nextElementSibling.before(monthDisplay);
+
+            // Collect each month's totals for aggregate display.
+            monthTotals[monthId] = {"accepted": acceptedTotal, "declined": declinedTotal, "rejected": rejectedTotal};
         }
         return monthTotals;
     }
 
     /**
-     * @todo Display review totals for each month.
-     */
-    function displayMonthTotals(monthTotals) {
-    }
-
-    /**
      * @todo Display review totals for whole page.
+     * @param {Object} monthTotals
      */
     function displayPageTotals(monthTotals) {
     }
