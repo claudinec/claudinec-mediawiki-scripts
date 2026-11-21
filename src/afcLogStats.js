@@ -19,11 +19,11 @@ $(document).ready(function () {
     }
 
     /**
-     * Parse an AfC_log page.
+     * Get each month's review totals from an AfC log.
      * An AfC log page (without archives) is divided into sections for each calendar month.
      */
     function parseAfcLog() {
-        let monthCounts = new Object();
+        let monthTotals = new Object();
         let allMonths = document.querySelectorAll(".mw-heading3");
         for (const month of allMonths) {
             var monthId = month.firstElementChild.id;
@@ -34,14 +34,22 @@ $(document).ready(function () {
             // if (declinedReviews.length > 0) {
             // }
             var rejectedReviews = logEntries.filter((review) => review.innerText.startsWith("Rejected"));
-            monthCounts[monthId] = {"accepted": acceptedReviews.length, "declined": declinedReviews.length, "rejected": rejectedReviews.length};
+            monthTotals[monthId] = {"accepted": acceptedReviews.length, "declined": declinedReviews.length, "rejected": rejectedReviews.length};
         }
-        return monthCounts;
+        return monthTotals;
     }
 
     /**
-     * @todo Display review counts for whole page and for each month.
+     * @todo Display review totals for each month.
      */
+    function displayMonthTotals(monthTotals) {
+    }
+
+    /**
+     * @todo Display review totals for whole page.
+     */
+    function displayPageTotals(monthTotals) {
+    }
 
     // @todo Add portlet link.
 
