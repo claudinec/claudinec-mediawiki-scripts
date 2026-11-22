@@ -16,7 +16,7 @@ $(function () {
 
     // Load the default stylesheet.
     mw.loader.load(
-        "/w/index.php?title=User:ClaudineChionh/Scripts/afcLogTotals.css&action=raw&ctype=text/css",
+        "//en.wikipedia.org/w/index.php?title=User:ClaudineChionh/Scripts/afcLogTotals.css&action=raw&ctype=text/css",
         "text/css",
     );
 
