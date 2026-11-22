@@ -1,10 +1,10 @@
 <!-- SPDX-FileCopyrightText: 2026 User:ClaudineChionh -->
 <!-- SPDX-License-Identifier: CC-BY-SA-4.0 OR GFDL-1.3-no-invariants-or-later -->
-{{infobox Wikipedia user script
+{{Infobox Wikipedia user script
  |styled             =
  |bodystyle          =
  |install-target     =
- |name               =
+ |name               = afcLogTotals
  |logo               =
  |logosize           =
  |logoupright        =
@@ -15,18 +15,17 @@
  |screenshotupright  =
  |screenshotalt      =
  |screenshot-caption =
- |desc               =
+ |desc               = Display accept, decline, and reject totals for an AfC log
  |author             = [[User:ClaudineChionh|]]
  |maintainer         =
- |status             =
- |beta               = y
- |source             = <!-- or " |mainsource = " or " |beta = " -->
- |released           = {{Start date and age|yyyy|mm|dd|df=y}}
+ |status             = Beta
+ |source             = [[User:ClaudineChionh/Scripts/afcLogTotals.js]]
+ |released           = {{Start date and age|2026|11|22|df=y}}
  |version            = 0.1.0
- |updated            = {{Start date and age|yyyy|mm|dd|df=y}}
+ |updated            =
  |browsers           =
  |skins              =
- |github             =
+ |github             = claudinec-mediawiki-scripts/src/afcLogTotals.js
  |categorize         = <!-- or " |cat = " -->
 }}
 
@@ -54,3 +53,7 @@ mw.loader.load("/w/index.php?title=User:ClaudineChionh/Scripts/afcLogTotals.js&a
 </syntaxhighlight>
 
 You may need to [[Wikipedia:PURGE|purge your browser's cache]] after saving the page.
+
+== Styling ==
+
+This script loads CSS from [[User:ClaudineChionh/Scripts/afcLogTotals.css]], which is extremely minimalistic because I don't have an eye for design. You can override this in your [[Wikipedia:Customisation#Skins|skin-specific CSS or common.css]] by styling the <code>.afc-review-totals</code> class.
