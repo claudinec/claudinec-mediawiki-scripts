@@ -10,7 +10,7 @@
 $(function () {
     // Only activate on pages matching User:Username/AfC_log.
     let pageName = mw.config.get("wgPageName");
-    if (!pageName.match(/User:.+\/AfC_log/)) {
+    if (!pageName.match(/^User:[^/]+\/AfC_log$/)) {
         return;
     }
 
