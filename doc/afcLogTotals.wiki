@@ -25,7 +25,7 @@
  |desc               = Display accept, decline, and reject totals for an AfC log
  |author             = [[User:ClaudineChionh|]]
  |maintainer         =
- |status             = Beta
+ |status             = Alpha
  |source             = [[User:ClaudineChionh/Scripts/afcLogTotals.js]]
  |released           = {{Start date and age|2026|11|22|df=y}}
  |version            = 0.1.0
@@ -64,3 +64,8 @@ You may need to [[Wikipedia:PURGE|purge your browser's cache]] after saving the 
 == Styling ==
 
 This script loads CSS from [[User:ClaudineChionh/Scripts/afcLogTotals.css]], which is extremely minimalistic because I don't have an eye for design. You can override this in your [[Wikipedia:Customisation#Skins|skin-specific CSS or common.css]] by styling the <code>.afc-review-totals</code> class.
+
+== Bugs and feature requests ==
+
+* Test on other skins (Minerva might have different CSS selectors)
+* Enable on subpages (do they all follow the same format?)
