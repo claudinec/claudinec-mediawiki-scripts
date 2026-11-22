@@ -8,13 +8,12 @@
  */
 
 $(document).ready(function () {
-    const AFCLOG_RE = /User:.+\/AfC_log/;
     // const DECLINE_RE = /^Declined (Draft|User):(.+) \(((?<reason1>\w+){ & (?<reason2>\w+)}?)\) by /;
     const DECLINE_RE = /^Declined (Draft|User):(.+) \(((\w+)( & (\w+))?)\) by /;
 
     // Only activate on pages matching User:Username/AfC_log.
     let pageName = mw.config.get("wgPageName");
-    if (!(pageName.match(AFCLOG_RE))) {
+    if (!(pageName.match(/User:.+\/AfC_log/))) {
         return;
     }
 
@@ -40,13 +39,14 @@ $(document).ready(function () {
 
             // Display each month's totals between the heading and the start of the list.
             var monthDiv = document.createElement("div");
-            var monthText = document.createTextNode(`Accepted: ${acceptedTotal}, Declined: ${declinedTotal}, Rejected: ${rejectedTotal}.`);
+            var monthText = document.createTextNode(`Accepted: ${acceptedTotal}, declined: ${declinedTotal}, rejected: ${rejectedTotal}.`);
             var monthDisplay = monthDiv.appendChild(monthText);
             month.nextElementSibling.before(monthDisplay);
 
             // Collect each month's totals for aggregate display.
             monthTotals.set(monthId, {"accepted": acceptedTotal, "declined": declinedTotal, "rejected": rejectedTotal});
         }
+
         // Get totals for the whole page.
         const pageTotals = { accepted: 0, declined: 0, rejected: 0 };
 
@@ -55,6 +55,13 @@ $(document).ready(function () {
             pageTotals.declined += declined;
             pageTotals.rejected += rejected;
         }
+
+        // Display totals for the whole page.
+        const logContent = document.getElementById("mw-content-text");
+        const pageTotalDiv = document.createElement("div");
+        const pageTotalText = document.createTextNode(`Total accepted: ${pageTotals.accepted}, total declined: ${pageTotals.declined}, total rejected: ${pageTotals.rejected}.`);
+        const pageTotalDisplay = pageTotalDiv.appendChild(pageTotalText);
+        logContent.firstElementChild.before(pageTotalDisplay);
     }
 
     // @todo Add portlet link.
