@@ -5,6 +5,7 @@
 
 == Original ==
 
+* {{Userscript |doc=User:ClaudineChionh/Scripts/afcLogTotals |noref=yes}} – Display accept, decline, and reject totals for an AfC log ({{GitHub|https://github.com/claudinec/claudinec-mediawiki-scripts/blob/main/src/afcLogTotals.js}})
 * {{Userscript |doc=User:ClaudineChionh/Scripts/copyPageContent |noref=yes}} – Copy the content of the current page or edit form to the system clipboard ({{GitHub|https://github.com/claudinec/claudinec-mediawiki-scripts/blob/main/src/copyPageContent.js}})
 
 == Forks ==

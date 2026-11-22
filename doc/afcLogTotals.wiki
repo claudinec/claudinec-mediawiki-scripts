@@ -25,7 +25,7 @@
  |updated            =
  |browsers           =
  |skins              =
- |github             = claudinec-mediawiki-scripts/src/afcLogTotals.js
+ |github             = claudinec/claudinec-mediawiki-scripts/blob/main/src/afcLogTotals.js
  |categorize         = <!-- or " |cat = " -->
 }}
 
@@ -49,7 +49,7 @@ You can install this script on this Wikipedia by adding the following to your pe
 which expands to:
 
 <syntaxhighlight lang="JavaScript">
-mw.loader.load("/w/index.php?title=User:ClaudineChionh/Scripts/afcLogTotals.js&action=raw&ctype=text/javascript"); // Backlink: [[User:ClaudineChionh/Scripts/afcLogTotals.js]]
+mw.loader.load("/w/index.php?title=User:ClaudineChionh/Scripts/afcLogTotals.js&action=raw&ctype=text/javascript"); // Backlink: [[User:ClaudineChionh/Scripts/afcLogTotals]]
 </syntaxhighlight>
 
 You may need to [[Wikipedia:PURGE|purge your browser's cache]] after saving the page.
