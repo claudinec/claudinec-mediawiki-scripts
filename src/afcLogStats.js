@@ -7,11 +7,11 @@
  * @external jQuery
  */
 
-const AFCLOG_RE = /User:.+\/AfC_log/;
-// const DECLINE_RE = /^Declined (Draft|User):(.+) \(((?<reason1>\w+){ & (?<reason2>\w+)}?)\) by /;
-const DECLINE_RE = /^Declined (Draft|User):(.+) \(((\w+)( & (\w+))?)\) by /;
-
 $(document).ready(function () {
+    const AFCLOG_RE = /User:.+\/AfC_log/;
+    // const DECLINE_RE = /^Declined (Draft|User):(.+) \(((?<reason1>\w+){ & (?<reason2>\w+)}?)\) by /;
+    const DECLINE_RE = /^Declined (Draft|User):(.+) \(((\w+)( & (\w+))?)\) by /;
+
     // Only activate on pages matching User:Username/AfC_log.
     let pageName = mw.config.get("wgPageName");
     if (!(pageName.match(AFCLOG_RE))) {
@@ -23,8 +23,8 @@ $(document).ready(function () {
      * An AfC log page (without archives) is divided into sections for each calendar month.
      */
     function showAfcLogStats() {
-        let monthTotals = new Map();
-        let allMonths = document.querySelectorAll(".mw-heading3");
+        const monthTotals = new Map();
+        const allMonths = document.querySelectorAll(".mw-heading3");
 
         // Parse page for each month's totals and display these under each month's heading.
         for (var month of allMonths) {
