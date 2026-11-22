@@ -8,9 +8,10 @@
  */
 
 $(function () {
-    // Only activate on pages matching User:Username/AfC_log.
-    let pageName = mw.config.get("wgPageName");
-    if (!pageName.match(/^User:[^/]+\/AfC_log$/)) {
+    // Only activate on English Wikipedia pages matching User:Username/AfC_log.
+    const wikiID = mw.config.get("wgWikiID");
+    const pageName = mw.config.get("wgPageName");
+    if (wikiID !== "enwiki" || !pageName.match(/^User:[^/]+\/AfC_log$/)) {
         return;
     }
 

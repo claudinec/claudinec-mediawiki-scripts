@@ -30,7 +30,7 @@
  |categorize         = <!-- or " |cat = " -->
 }}
 
-'''afcLogTotals''' is a [[WP:US|user script]] that counts a user's [[WP:AFC|Articles for Creation]] reviews that have been logged by the [[Wikipedia:WikiProject Articles for creation/Helper script#Logging|AFCH script]], and calculates accept, decline, and reject rates.
+'''afcLogTotals''' is a [[WP:US|user script]] that counts a user's [[WP:AFC|Articles for Creation]] reviews that have been logged by the [[Wikipedia:WikiProject Articles for creation/Helper script#Logging|AFCH script]], and displays accept, decline, and reject totals for each month and for the whole page.
 
 == Benefits ==
 
@@ -51,12 +51,6 @@ which expands to:
 
 <syntaxhighlight lang="JavaScript">
 mw.loader.load("/w/index.php?title=User:ClaudineChionh/Scripts/afcLogTotals.js&action=raw&ctype=text/javascript"); // Backlink: [[User:ClaudineChionh/Scripts/afcLogTotals.js]]
-</syntaxhighlight>
-
-Alternatively, you can install the script globally on all Wikimedia wikis by adding the following to your [[m:Special:MyPage/global.js|global.js]] file:
-
-<syntaxhighlight lang="JavaScript">
-mw.loader.load("//en.wikipedia.org/w/index.php?title=User:ClaudineChionh/Scripts/afcLogTotals.js&action=raw&ctype=text/javascript");
 </syntaxhighlight>
 
 You may need to [[Wikipedia:PURGE|purge your browser's cache]] after saving the page.
