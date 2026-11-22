@@ -30,7 +30,7 @@
  |categorize         = <!-- or " |cat = " -->
 }}
 
-'''afcLogStats''' is a [[WP:US|user script]] that counts a user's [[WP:AFC|Articles for Creation]] reviews that have been logged by the [[Wikipedia:WikiProject Articles for creation/Helper script#Logging|AFCH script]], and calculates accept, decline, and reject rates.
+'''afcLogTotals''' is a [[WP:US|user script]] that counts a user's [[WP:AFC|Articles for Creation]] reviews that have been logged by the [[Wikipedia:WikiProject Articles for creation/Helper script#Logging|AFCH script]], and calculates accept, decline, and reject rates.
 
 == Benefits ==
 
@@ -45,18 +45,18 @@ Because this script simply parses the users's AfC log, it counts drafts that hav
 
 You can install this script on this Wikipedia by adding the following to your personal [[Special:MyPage/common.js|common.js]] file:
 
-{{tlxs|lusc|User:ClaudineChionh/Scripts/afcLogStats.js}}
+{{tlxs|lusc|User:ClaudineChionh/Scripts/afcLogTotals.js}}
 
 which expands to:
 
 <syntaxhighlight lang="JavaScript">
-mw.loader.load("/w/index.php?title=User:ClaudineChionh/Scripts/afcLogStats.js&action=raw&ctype=text/javascript"); // Backlink: [[User:ClaudineChionh/Scripts/afcLogStats.js]]
+mw.loader.load("/w/index.php?title=User:ClaudineChionh/Scripts/afcLogTotals.js&action=raw&ctype=text/javascript"); // Backlink: [[User:ClaudineChionh/Scripts/afcLogTotals.js]]
 </syntaxhighlight>
 
 Alternatively, you can install the script globally on all Wikimedia wikis by adding the following to your [[m:Special:MyPage/global.js|global.js]] file:
 
 <syntaxhighlight lang="JavaScript">
-mw.loader.load("//en.wikipedia.org/w/index.php?title=User:ClaudineChionh/Scripts/afcLogStats.js&action=raw&ctype=text/javascript");
+mw.loader.load("//en.wikipedia.org/w/index.php?title=User:ClaudineChionh/Scripts/afcLogTotals.js&action=raw&ctype=text/javascript");
 </syntaxhighlight>
 
 You may need to [[Wikipedia:PURGE|purge your browser's cache]] after saving the page.

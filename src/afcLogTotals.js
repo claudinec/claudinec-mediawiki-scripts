@@ -21,7 +21,7 @@ $(document).ready(function () {
      * Show review totals for an AfC log and for each month.
      * An AfC log page (without archives) is divided into sections for each calendar month.
      */
-    function showAfcLogStats() {
+    function showLogTotals() {
         const monthTotals = new Map();
         const allMonths = document.querySelectorAll(".mw-heading3");
 
