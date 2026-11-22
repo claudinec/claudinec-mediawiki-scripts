@@ -47,14 +47,14 @@ $(document).ready(function () {
             // Collect each month's totals for aggregate display.
             monthTotals.set(monthId, {"accepted": acceptedTotal, "declined": declinedTotal, "rejected": rejectedTotal});
         }
-        return monthTotals;
-    }
+        // Get totals for the whole page.
+        const pageTotals = { accepted: 0, declined: 0, rejected: 0 };
 
-    /**
-     * @todo Display review totals for whole page.
-     * @param {Object} monthTotals
-     */
-    function displayPageTotals(monthTotals) {
+        for (const { accepted, declined, rejected } of monthTotals.values()) {
+            pageTotals.accepted += accepted;
+            pageTotals.declined += declined;
+            pageTotals.rejected += rejected;
+        }
     }
 
     // @todo Add portlet link.
