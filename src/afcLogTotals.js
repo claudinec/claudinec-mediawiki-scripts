@@ -1,7 +1,7 @@
 // SPDX-FileCopyrightText: 2026 User:ClaudineChionh
 // SPDX-License-Identifier: GPL-3.0-or-later OR CC-BY-SA-4.0
 /**
- * @file
+ * Displays accept, decline, and reject totals for an AfC log.
  * @author User:ClaudineChionh
  * @version 0.1.0
  * @external jQuery
@@ -39,6 +39,8 @@ $(document).ready(function () {
 
             // Display each month's totals between the heading and the start of the list.
             var monthDiv = document.createElement("div");
+            monthDiv.id = `afc-${monthId}-totals`;
+            monthDiv.className = "afc-review-totals";
             var monthText = document.createTextNode(`Accepted: ${acceptedTotal}, declined: ${declinedTotal}, rejected: ${rejectedTotal}.`);
             var monthDisplay = monthDiv.appendChild(monthText);
             month.nextElementSibling.before(monthDisplay);
@@ -59,6 +61,8 @@ $(document).ready(function () {
         // Display totals for the whole page.
         const logContent = document.getElementById("mw-content-text");
         const pageTotalDiv = document.createElement("div");
+        pageTotalDiv.id = "afc-page-totals";
+        pageTotalDiv.className = "afc-review-totals";
         const pageTotalText = document.createTextNode(`Total accepted: ${pageTotals.accepted}, total declined: ${pageTotals.declined}, total rejected: ${pageTotals.rejected}.`);
         const pageTotalDisplay = pageTotalDiv.appendChild(pageTotalText);
         logContent.firstElementChild.before(pageTotalDisplay);
