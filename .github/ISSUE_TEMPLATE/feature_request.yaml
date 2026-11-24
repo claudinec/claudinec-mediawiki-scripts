@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest an idea for a script
+labels: "enhancement"
+type: feature
+assignees:
+  - claudinec
+body:
+  - type: dropdown
+    attributes:
+      label: Script name
+      options:
+        - afcLogTotals
+        - copyPageContent
+        - highlightPiped
+        - SkinSwitcher
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Your suggestion/request/idea
+    validations:
+      required: true
+
