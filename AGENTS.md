@@ -16,3 +16,9 @@ Chat responses should be efficient and concise. Don't suggest next steps unless 
 ## Documentation style
 
 Write section headings, issue titles, chat thread titles, and so on in sentence case, not title case.
+
+## Git commit messages
+
+If you make a git commit, add a git trailer with your model and version details in this format:  
+`Assisted-by: MODEL_NAME (MODEL_VERSION)`
+
