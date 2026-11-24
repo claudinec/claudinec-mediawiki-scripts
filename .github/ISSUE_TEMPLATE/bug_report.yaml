@@ -41,5 +41,5 @@ body:
     attributes:
       label: Screenshots
     validations:
-      accept: ".png,.jpg,.jpeg,.heic"
+      accept: ".png,.jpg,.jpeg"
 
