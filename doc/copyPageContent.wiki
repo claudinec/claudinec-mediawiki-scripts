@@ -5,7 +5,7 @@
 <!-- [[WP:USL]] listing: §Appearance > Site-wide > Body
 {{user script table row
  |doc=User:ClaudineChionh/Scripts/copyPageContent
- |desc=Copy the content of the current page or edit form to the system clipboard. (Not yet compatible with the Visual Editor edit form.)
+ |desc=Copy the content of the current page or edit form to the system clipboard.
 }}
 -->
 
@@ -16,8 +16,8 @@
  |status             = Beta
  |source             = [[User:ClaudineChionh/Scripts/copyPageContent.js]]
  |released           = {{Start date and age|2021|11|06|df=y}}
- |version            = 0.3.1
- |updated            = {{Start date and age|2026|03|13|df=y}}
+ |version            = 0.4.0
+ |updated            = {{Start date and age|2026|11|20|df=y}}
 }}
 
 '''copyPageContent''' adds a link in the '''Tools''' menu to copy the raw content of the current page or edit form to the system clipboard. You might find this useful for copying text to a [[WP:TEXTES|text editor]] for thorough editing.
