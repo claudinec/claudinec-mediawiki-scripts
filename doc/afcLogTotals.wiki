@@ -27,9 +27,9 @@
  |maintainer         =
  |status             = Alpha
  |source             = [[User:ClaudineChionh/Scripts/afcLogTotals.js]]
- |released           = {{Start date and age|2026|11|28|df=y}}
+ |released           = {{Start date and age|2026|11|22|df=y}}
  |version            = 0.1.1
- |updated            =
+ |updated            = {{Start date and age|2026|11|28|df=y}}
  |browsers           =
  |skins              =
  |github             = claudinec/claudinec-mediawiki-scripts/blob/main/src/afcLogTotals.js
