@@ -11,7 +11,8 @@ $(function () {
     // Only activate on English Wikipedia pages matching User:Username/AfC_log.
     const wikiID = mw.config.get("wgWikiID");
     const pageName = mw.config.get("wgPageName");
-    if (wikiID !== "enwiki" || !pageName.match(/^User:[^/]+\/AfC_log$/)) {
+    const isPage = mw.config.get("wgIsArticle");
+    if (wikiID !== "enwiki" || !pageName.match(/^User:[^/]+\/AfC_log$/) || !isPage) {
         return;
     }
 
