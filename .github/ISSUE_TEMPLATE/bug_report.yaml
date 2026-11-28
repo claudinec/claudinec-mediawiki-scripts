@@ -26,12 +26,14 @@ body:
     attributes:
       label: Skin
       description: If reporting an issue with SkinSwitcher, this is your skin before switching
+      multiple: true
       options:
         - Vector 2022 (desktop default)
         - Vector 2010
         - Timeless
         - Minerva (mobile default)
         - MonoBook
+        - N/A
       default: 0
   - type: input
     attributes:
