@@ -23,12 +23,12 @@
  |screenshotalt      =
  |screenshot-caption =
  |desc               = Display accept, decline, and reject totals for an AfC log
- |author             = [[User:ClaudineChionh|]]
+ |author             = [[User:ClaudineChionh|ClaudineChionh]]
  |maintainer         =
  |status             = Alpha
  |source             = [[User:ClaudineChionh/Scripts/afcLogTotals.js]]
- |released           = {{Start date and age|2026|11|22|df=y}}
- |version            = 0.1.0
+ |released           = {{Start date and age|2026|11|28|df=y}}
+ |version            = 0.1.1
  |updated            =
  |browsers           =
  |skins              =
@@ -65,7 +65,20 @@ You may need to [[Wikipedia:PURGE|purge your browser's cache]] after saving the 
 
 This script loads CSS from [[User:ClaudineChionh/Scripts/afcLogTotals.css]], which is extremely minimalistic because I don't have an eye for design. You can override this in your [[Wikipedia:Customisation#Skins|skin-specific CSS or common.css]] by styling the <code>.afc-review-totals</code> class.
 
+== AI disclosure ==
+
+OpenAI Codex and GitHub Copilot assisted as [[Rubber duck debugging|rubber ducks]].
+
 == Bugs and feature requests ==
 
-* Test on other skins (Minerva might have different CSS selectors)
-* Enable on subpages (do they all follow the same format?)
+Issues with the script can be reported on [https://github.com/claudinec/claudinec-mediawiki-scripts/issues GitHub] or on the [[{{TALKPAGENAME}}|talk page]].
+
+* [https://github.com/claudinec/claudinec-mediawiki-scripts/issues/22 Enable on subpages] (do they all follow the same format?)
+* [https://github.com/claudinec/claudinec-mediawiki-scripts/issues/17 Count reasons for decline]
+
+== Changelog ==
+
+* [[Special:Permalink/1388456858|v0.1.1]] (2026-11-28):
+** [https://github.com/claudinec/claudinec-mediawiki-scripts/issues/21 Don't display on history page]
+** [https://github.com/claudinec/claudinec-mediawiki-scripts/issues/19 Fix for MobileFrontend]
+* [[Special:Permalink/1387063744|v0.1.0]] (2026-11-22): Initial version
