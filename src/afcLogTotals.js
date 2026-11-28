@@ -90,6 +90,6 @@ $(function () {
     const pageTotalText = document.createTextNode(
         `Total accepted: ${pageTotals.accepted}, total declined: ${pageTotals.declined}, total rejected: ${pageTotals.rejected}.`,
     );
-    const pageTotalDisplay = pageTotalDiv.appendChild(pageTotalText);
+    pageTotalDiv.appendChild(pageTotalText);
     logContent.firstElementChild.before(pageTotalDiv);
 });
